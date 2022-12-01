@@ -21,7 +21,7 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '宝贝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oizUn6ChRbF_hR5EYksAUoaJgpd4,oizUn6IS_4272ZX8TJM5vf9bWa10',
+      id: 'oizUn6ChRbF_hR5EYksAUoaJgpd4',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'EawJOmLfVNdPD2AHbm6KT6ss_sL5yI9FEc6ZCvSc6yU',
       festivals: [
@@ -40,6 +40,28 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2022-08-24' },
       ],
     },
+    {
+      // 想要发送的人的名字
+      name: '宝贝1',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oizUn6IS_4272ZX8TJM5vf9bWa10',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'EawJOmLfVNdPD2AHbm6KT6ss_sL5yI9FEc6ZCvSc6yU',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '宝贝', year: '1996', date: '04-08',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '节日', name: '相识纪念日', year: '2022', date: '08-24',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-08-24' },
+      ],
   ],
 
 
